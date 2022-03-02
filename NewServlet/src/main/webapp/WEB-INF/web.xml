@@ -16,18 +16,18 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
-
-	<servlet>
-		<servlet-name>list</servlet-name>
-		<servlet-class>Pack.ListServlet</servlet-class>
+	
+    <servlet>
+		<servlet-name>insert</servlet-name>
+		<servlet-class>Pack.InsertServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>list</servlet-name>
-		<url-pattern>/list.do</url-pattern>
+		<servlet-name>insert</servlet-name>
+		<url-pattern>/insert</url-pattern>
 	</servlet-mapping>
-	
-		<servlet>
+    
+	<servlet>
 		<servlet-name>update</servlet-name>
 		<servlet-class>Pack.UpdateServlet</servlet-class>
 	</servlet>
@@ -46,5 +46,24 @@
 		<servlet-name>updateok</servlet-name>
 		<url-pattern>/updateok.do</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>Pack.DeleteServlet</servlet-class>
+	</servlet>
 
-</web-app>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/delete.do</url-pattern>
+	</servlet-mapping>
+    
+  	<servlet>
+	    <servlet-name>list</servlet-name>
+	    <servlet-class>Pack.ListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+	    <servlet-name>list</servlet-name>
+	    <url-pattern>/list.do</url-pattern>
+	</servlet-mapping>
+   </web-app>
